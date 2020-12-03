@@ -11,5 +11,6 @@ final = data.each_with_object({}) do |(key, value), result|
       end 
       result[name][key].push(inner_k.to_s)
     end
+  end 
 end 
 end
