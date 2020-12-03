@@ -6,6 +6,8 @@ final = data.each_with_object({}) do |(key, value), result|
       if !result[name]
         result[name] = {}
       end 
-      
+      if !result[name][key]
+        result[name][key] = {}
+      end 
 end 
 end
